@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body {
+    font-family: 'Silkscreen', sans-serif;    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #2176cc;
+}
+
+#header {
+    color: hsl(356, 93%, 75%);
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+
+#calculator {
+    background-color: #e8e7cb;
+    border-radius: 20px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    font-size: 5rem;
+    text-align: left;
+    background-color: hsl(350, 61%, 88%);
+    color: #ff7d6e;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    font-family: 'Silkscreen', sans-serif;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(356, 93%, 75%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(356, 93%, 80%);    
+}
+
+button:active {
+    background-color: hsl(356, 93%, 85%);    
+}
+
+.operator-btn {
+    background-color: #ff7d6e;
+}
+
+.operator-btn:hover {
+    background-color: hsl(6, 100%, 75%);
+}
+
+.operator-btn:active {
+    background-color: hsl(6, 100%, 80%);
+}
