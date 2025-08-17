@@ -7,24 +7,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 100vh;
     background-color: #2176cc;
 }
 
-#header {
-    color: hsl(356, 93%, 75%);
-    padding-bottom: 50px;
-    font-size: 3rem;
-}
-
-#calculator {
+/* #calculator {
     background-color: #e8e7cb;
     border-radius: 20px;
     max-width: 500px;
     overflow: hidden;
-}
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 32px;
+} */
 
-#display {
+/* #display {
     width: 100%;
     padding: 20px;
     border: none;
@@ -33,16 +30,16 @@ body {
     background-color: hsl(58, 39%, 80%);
     color: hsl(356, 93%, 75%);
     font-family: 'Silkscreen', sans-serif;    
-}
+} */
 
-#keys {
+/* #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
-}
+} */
 
-button {
+/* button {
     font-family: 'Silkscreen', sans-serif;    
     width: 100px;
     height: 100px;
@@ -52,6 +49,81 @@ button {
     color: #e8e7cb;
     font-size: 3rem;
     cursor: pointer;
+} */
+
+#calculator {
+    background-color: #e8e7cb;
+    border-radius: 20px;
+    width: 90%;              /* Instead of max-width: 500px */
+    max-width: 500px;        /* Keep this as upper limit */
+    overflow: hidden;
+    margin: 50px auto;       /* Center it */
+    padding-top: 32px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    font-size: clamp(2rem, 8vw, 5rem);  /* Responsive font size */
+    text-align: left;
+    background-color: hsl(58, 39%, 80%);
+    color: hsl(356, 93%, 75%);
+    font-family: 'Silkscreen', sans-serif;
+    box-sizing: border-box;   /* Include padding in width */
+}
+
+button {
+    font-family: 'Silkscreen', sans-serif;    
+    aspect-ratio: 1 / 1;     /* Makes square buttons */
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(356, 93%, 75%);
+    color: #e8e7cb;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(5px, 2vw, 10px);  /* Responsive gaps */
+    padding: 25px;    
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #header1 {
+        font-size: clamp(1.5rem, 6vw, 3rem);
+    }
+    
+    img {
+        width: 3em;
+        height: 3em;
+    }
+    
+    #note {
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #calculator {
+        margin: 20px auto;
+    }
 }
 
 button:hover {
@@ -82,4 +154,51 @@ button:active {
     0% { background-color: normal; }
     50% { background-color: hsl(58, 39%, 90%)}
     100% { background-color: normal; }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+img {
+    width: 5em;
+    height: 5em;
+}
+
+
+#header1 {
+    /* color: hsl(356, 93%, 75%); */
+    color: hsl(58, 39%, 90%);
+    font-size: 3rem;
+    margin: 0px;
+}
+
+#note {
+    margin: 0px;
+    background-color: hsl(58, 60%, 85%);
+    padding: 25px;
+    margin-bottom: 25px;
+    color: #2176cc;
+}
+
+p {
+    margin: 0px;
+}
+
+footer {
+    color: #e8e7cb;
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #e8e7cb;
 }
