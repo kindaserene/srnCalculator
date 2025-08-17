@@ -2,7 +2,7 @@
 
 A simple, responsive calculator built with vanilla HTML, CSS, and JavaScript.
 
-**[Live Demo](your-link-here)**
+**[Live Demo](https://kindaserene.github.io/srnCalculator/)**
 
 ## Features
 
@@ -27,13 +27,6 @@ A simple, responsive calculator built with vanilla HTML, CSS, and JavaScript.
 - CSS Grid + Flexbox
 - [Silkscreen font](https://fonts.google.com/specimen/Silkscreen)
 
-## Installation
-
-```bash
-git clone https://github.com/yourusername/calculator-app.git
-# Open index.html in browser
-```
-
 ---
 
-Made with 💜 by [Serene](https://github.com/yourusername) | Learning web development through [The Odin Project](https://www.theodinproject.com/)
+Made with 💜 by [Serene](https://github.com/kindaserene) | Learning web development through [The Odin Project](https://www.theodinproject.com/)
