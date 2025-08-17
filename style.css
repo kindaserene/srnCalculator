@@ -73,3 +73,13 @@ button:active {
 .operator-btn:active {
     background-color: hsl(6, 100%, 80%);
 }
+
+.flash {
+    animation: flash-effect 0.3s ease-in-out;
+}
+
+@keyframes flash-effect {
+    0% { background-color: normal; }
+    50% { background-color: hsl(58, 39%, 90%)}
+    100% { background-color: normal; }
+}
