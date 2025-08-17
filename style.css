@@ -30,8 +30,9 @@ body {
     border: none;
     font-size: 5rem;
     text-align: left;
-    background-color: hsl(350, 61%, 88%);
-    color: #ff7d6e;
+    background-color: hsl(58, 39%, 80%);
+    color: hsl(356, 93%, 75%);
+    font-family: 'Silkscreen', sans-serif;    
 }
 
 #keys {
@@ -48,7 +49,7 @@ button {
     border-radius: 50px;
     border: none;
     background-color: hsl(356, 93%, 75%);
-    color: white;
+    color: #e8e7cb;
     font-size: 3rem;
     cursor: pointer;
 }
